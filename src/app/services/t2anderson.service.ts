@@ -1,4 +1,3 @@
-// src/app/services/educator.service.ts
 import { Injectable } from '@angular/core';
 import { Teacher } from '../models/teacher.models';
 
@@ -25,5 +24,4 @@ export class AndersonService {
     return `${this.educator.name}, un genio en la seguridad  ${this.educator.subject},porque ya se flitraon pruebas en ${this.educator.school} en las empresas de  ${this.educator.city}.`;
   }
 
-  // Add more methods specific to educator's operations
 }

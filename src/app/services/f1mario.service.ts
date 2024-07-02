@@ -1,4 +1,3 @@
-// src/app/services/farmer.service.ts
 import { Injectable } from '@angular/core';
 import { Farmer } from '../models/farmer.models';
 
@@ -25,5 +24,4 @@ export class MarioService {
     return this.farmer.harvestCrop();
   }
 
-  // Add more methods specific to farmer's operations
 }

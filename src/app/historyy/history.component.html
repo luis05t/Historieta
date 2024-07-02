@@ -1,5 +1,4 @@
 <div class="history-container">
-  <!-- List of characters for current page -->
   <div class="character-cards">
     <nz-row [nzGutter]="16" nzJustify="center">
       <ng-container *ngFor="let character of getCharactersForPage(currentPage); let i = index">
@@ -46,8 +45,6 @@
       </ng-container>
     </nz-row>
   </div>
-
-  <!-- Pagination controls -->
   <div class="pagination">
     <nz-pagination
       [nzPageIndex]="currentPage"

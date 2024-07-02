@@ -1,4 +1,3 @@
-// src/app/services/drugdealer.service.ts
 import { Injectable } from '@angular/core';
 import { DrugDealer } from '../models/drugdealer.models'; 
 @Injectable({
@@ -24,5 +23,4 @@ export class AlbertoService {
     return this.drugDealer.sellDrugs();
   }
 
-  // Add more methods specific to drug dealer's operations
 }

@@ -1,4 +1,3 @@
-// src/app/models/doctor.model.ts
 import { Citizen } from "./citizen.models";
 
 export class Doctor extends Citizen {
@@ -11,8 +10,14 @@ export class Doctor extends Citizen {
     super(name, city);
   }
 
-  // Método específico para un doctor
+  
   treatPatients(): string {
     return `${this.name},  ${this.specialization}, porque yo vengo del ${this.hospital} de ${this.city}.`;
+  }
+}
+
+export class DoctorCity extends Doctor {
+  override treatPatients(): string {
+    return `${this.name},  ${this.specialization}, yo vengo de ${this.city}.`;
   }
 }

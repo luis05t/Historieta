@@ -1,4 +1,3 @@
-// src/app/services/police.service.ts
 import { Injectable } from '@angular/core';
 import { Police } from '../models/police.models'; 
 

@@ -1,4 +1,4 @@
-// src/app/services/businessman.service.ts
+
 import { Injectable } from '@angular/core';
 import { Businessman } from '../models/businessman.models'; 
 
@@ -25,5 +25,5 @@ export class LolaService {
     return `${this.businessman.name}, CEO de ${this.businessman.company}, una magnate en${this.businessman.industry} en  ${this.businessman.city}`;
   }
 
-  // Add more methods specific to businessman's operations
+  
 }

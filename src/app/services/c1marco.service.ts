@@ -1,4 +1,4 @@
-// src/app/services/citizen.service.ts
+
 import { Injectable } from '@angular/core';
 import { Citizen } from '../models/citizen.models'; 
 
@@ -19,5 +19,5 @@ export class MarcoService {
     return this.citizen;
   }
 
-  // Add more methods specific to citizen's operations
+  
 }

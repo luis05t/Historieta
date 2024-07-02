@@ -33,9 +33,9 @@ import { NzGridModule } from 'ng-zorro-antd/grid';
   ]
 })
 export class HistoryComponent implements OnInit {
-  characters: any[] = []; // Array to hold all characters
+  characters: any[] = []; 
   currentPage: number = 1;
-  charactersPerPage: number[] = [2, 4, 4, 3, 1]; // Number of characters per page
+  charactersPerPage: number[] = [2, 4, 4, 3, 1]; 
   totalPages: number = this.charactersPerPage.length;
 
   constructor(
@@ -56,7 +56,7 @@ export class HistoryComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    // Fetch data for all characters
+    
     this.characters.push({ name: 'Marco', info: this.marcoService.getCitizen().name });
     this.characters.push({ name: 'Paula', info: this.paulaService.getCitizen().name });
     this.characters.push({ name: 'Williams', info: this.williamsService.treatPatients() });
@@ -73,7 +73,7 @@ export class HistoryComponent implements OnInit {
     this.characters.push({ name: 'Lola', info: this.lolaService.manageCompany() });
   }
 
-  // Method to get characters for current page
+  
   getCharactersForPage(pageNumber: number): any[] {
     const startIndex = this.charactersPerPage.slice(0, pageNumber - 1).reduce((a, b) => a + b, 0);
     const count = this.charactersPerPage[pageNumber - 1];

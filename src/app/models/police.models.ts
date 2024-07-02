@@ -1,4 +1,4 @@
-// src/app/models/police.model.ts
+
 import { Citizen } from "./citizen.models";
 
 export class Police extends Citizen {

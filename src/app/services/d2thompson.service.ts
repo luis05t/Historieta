@@ -1,4 +1,3 @@
-// src/app/services/healthcare-provider.service.ts
 import { Injectable } from '@angular/core';
 import { Doctor } from '../models/doctor.models';
 @Injectable({

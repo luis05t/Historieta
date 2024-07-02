@@ -1,4 +1,4 @@
-// src/app/services/citizen.service.ts
+
 import { Injectable } from '@angular/core';
 import { Citizen } from '../models/citizen.models';
 @Injectable({
