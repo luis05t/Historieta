@@ -1,7 +1,7 @@
 
 import { Citizen } from "./citizen.models"; 
 
-export class DrugDealer extends Citizen {
+export class DrugDealer extends Citizen { //Herencias 
   organization: any;
   constructor(
     name: string,

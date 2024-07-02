@@ -11,12 +11,12 @@ export class Doctor extends Citizen {
   }
 
   
-  treatPatients(): string {
+  treatPatients(): string {  
     return `${this.name},  ${this.specialization}, porque yo vengo del ${this.hospital} de ${this.city}.`;
   }
 }
 
-export class DoctorCity extends Doctor {
+export class DoctorCity extends Doctor { //P
   override treatPatients(): string {
     return `${this.name},  ${this.specialization}, yo vengo de ${this.city}.`;
   }
