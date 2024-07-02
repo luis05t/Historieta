@@ -1,0 +1,59 @@
+<div class="history-container">
+  <!-- List of characters for current page -->
+  <div class="character-cards">
+    <nz-row [nzGutter]="16" nzJustify="center">
+      <ng-container *ngFor="let character of getCharactersForPage(currentPage); let i = index">
+        <nz-col *ngIf="charactersPerPage[currentPage - 1] === 1" [nzSpan]="24">
+          <nz-card class="character-card">
+            <nz-card-meta
+              nzTitle="{{ character.name }}"
+              nzDescription="{{ character.info }}"
+            ></nz-card-meta>
+          </nz-card>
+        </nz-col>
+        <nz-col *ngIf="charactersPerPage[currentPage - 1] === 2" [nzSpan]="12">
+          <nz-card class="character-card">
+            <nz-card-meta
+              nzTitle="{{ character.name }}"
+              nzDescription="{{ character.info }}"
+            ></nz-card-meta>
+          </nz-card>
+        </nz-col>
+        <nz-col *ngIf="charactersPerPage[currentPage - 1] === 3 && i < 2" [nzSpan]="12">
+          <nz-card class="character-card">
+            <nz-card-meta
+              nzTitle="{{ character.name }}"
+              nzDescription="{{ character.info }}"
+            ></nz-card-meta>
+          </nz-card>
+        </nz-col>
+        <nz-col *ngIf="charactersPerPage[currentPage - 1] === 3 && i === 2" [nzSpan]="24">
+          <nz-card class="character-card">
+            <nz-card-meta
+              nzTitle="{{ character.name }}"
+              nzDescription="{{ character.info }}"
+            ></nz-card-meta>
+          </nz-card>
+        </nz-col>
+        <nz-col *ngIf="charactersPerPage[currentPage - 1] === 4" [nzSpan]="12">
+          <nz-card class="character-card">
+            <nz-card-meta
+              nzTitle="{{ character.name }}"
+              nzDescription="{{ character.info }}"
+            ></nz-card-meta>
+          </nz-card>
+        </nz-col>
+      </ng-container>
+    </nz-row>
+  </div>
+
+  <!-- Pagination controls -->
+  <div class="pagination">
+    <nz-pagination
+      [nzPageIndex]="currentPage"
+      [nzTotal]="totalPages"
+      [nzPageSize]="1"
+      (nzPageIndexChange)="currentPage = $event"
+    ></nz-pagination>
+  </div>
+</div>

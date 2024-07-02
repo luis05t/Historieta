@@ -1,0 +1,24 @@
+.history-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
